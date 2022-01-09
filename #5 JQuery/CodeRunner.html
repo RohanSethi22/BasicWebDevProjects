@@ -1,0 +1,207 @@
+<html>
+
+	<head>
+	
+		<title>Code_Runner</title>
+		
+		<style type="text/css">
+		
+		body
+			{
+			margin: 0;
+			padding: 0;
+			}
+		
+		#bar
+			{
+			height: 40;
+			background-color: grey;
+			}
+			
+		#logo
+			{
+			float: left;
+			color: white;
+			font-family: rockwell;
+			font-weight: bold;
+			font-size: 22;
+			margin: 5 5 0 5;
+			}
+			
+		#buttonbar
+			{
+			width: 300;
+			margin: 0 auto;
+			height: 40;
+			background-color: grey;
+			}
+		
+		.tabselectors
+			{
+			height: 40;
+			border-radius: 5px;
+			}
+			
+		.c1
+			{
+			background-color: white;
+			}
+			
+		.c2
+			{
+			background-color: #EBF4FF;
+			}
+			
+		.on
+			{
+			background-color: #C2D5EA;
+			}
+			
+		.base
+			{
+			background-color: #DDDDDD;
+			}
+			
+		.hide
+			{
+			display: none;
+			}
+			
+		.panel
+			{
+			float: left;
+			padding: 0 0 0 2;
+			border: 1px solid grey;
+			border-left: none;
+			}
+			
+		.header
+			{
+			height: 20;
+			padding: 5 5 8 5;
+			font-size: 18;
+			text-decoration: underline;
+			text-underline-position: under;
+			text-decoration-color: grey;
+			font-weight: bold;
+			}
+			
+		.panelcontent
+			{
+			resize: none;
+			border: none;
+			}
+			
+		</style>
+		
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		
+	</head>
+	
+	<body>
+	
+		<div id="bar">
+		
+			<div id="logo">Code_Runner</div>
+			
+			<div id="buttonbar" align="center">
+			
+				<input type="submit" class="tabselectors on" id="html" value="HTML">
+				<input type="submit" class="tabselectors base" id="css" value="CSS">
+				<input type="submit" class="tabselectors base" id="js" value="JavaScript">
+				<input type="submit" class="tabselectors on" id="op" value="Output">
+			
+			</div>
+			
+		</div>
+		
+		<div id="panelcontroller">
+		
+			<div id="htmlpanel" class="panel">
+				<div class="header">HTML</div>
+				<textarea id="htmlpanelcontent" class="panelcontent" placeholder="HTML Code"><p id="x">My Code Runner</p></textarea>
+			</div>
+			
+			<div id="csspanel" class="panel hide">
+				<div class="header">CSS</div>
+				<textarea id="csspanelcontent" class="panelcontent" placeholder="CSS Code">p{color: blue;font-size: 24;font-weight: bold}</textarea>
+			</div>
+			
+			<div id="jspanel" class="panel hide">
+				<div class="header">JavaScript</div>
+				<textarea id="jspanelcontent" class="panelcontent" placeholder="JavaScript Code">document.getElementById("x").innerHTML="I finally did it !!!";</textarea>
+			</div>
+			
+			<div id="oppanel" class="panel">
+				<div class="header">Output</div>
+				<iframe id="oppanelcontent" class="panelcontent">Output</iframe>
+			</div>
+		
+		</div>
+	
+		<script>
+		
+			function updateop()
+				{
+				$("#oppanelcontent").contents().find("html").html("<html><head><style type='text/css'>"+$("#csspanelcontent").val()+"</style></head><body>"+$("#htmlpanelcontent").val()+"</body></html>");
+				document.getElementById("oppanelcontent").contentWindow.eval($("#jspanelcontent").val());
+				}
+			
+			function updatewidth()
+				{
+				$(".panel").width(($(window).width()/(4-$(".hide").length))-5);
+				$(".panelcontent").width($(".panel").width()-2);
+				}
+
+			$(".tabselectors").hover(function()
+				{
+				
+				if($(this).css("backgroundColor")=="rgb(221, 221, 221)")
+					{$(this).removeClass("base");
+					$(this).addClass("c1");}
+				
+				else if($(this).css("backgroundColor")=="rgb(194, 213, 234)")
+					{$(this).removeClass("on");
+					$(this).addClass("c2");
+					}
+					
+				},function()
+				{
+				
+				if($(this).css("backgroundColor")=="rgb(235, 244, 255)")
+					{$(this).removeClass("c2");
+					$(this).addClass("on");}
+				
+				else if($(this).css("backgroundColor")=="rgb(255, 255, 255)")
+					{$(this).removeClass("c1");
+					$(this).addClass("base");}
+					
+				});
+				
+			$(".tabselectors").click(function()
+				{
+				if($(this).css("backgroundColor")=="rgb(235, 244, 255)")
+				{$(this).removeClass("c2");
+				$(this).addClass("base");}
+				else 
+				{$(this).removeClass("base");
+				$(this).addClass("on");}
+				
+				var pname="#"+$(this).attr("id")+"panel";
+				$(pname).toggleClass("hide");
+				updatewidth();
+				})
+				
+			updatewidth();
+			$(".panel").height($(window).height()-44);
+			$(".panelcontent").height($(window).height()-77);
+			
+			updateop();
+			
+			$("textarea").on('change keyup paste', function() {updateop();})
+			
+		</script>
+	
+	</body>
+	
+</html>

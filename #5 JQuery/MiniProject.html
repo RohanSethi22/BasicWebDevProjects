@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<title>Form Validation</title>
+		
+		<style>
+		
+		body
+			{
+			font-size: 27;
+			margin:0;
+			}
+		
+		label
+			{
+			float: left;
+			}
+			
+		input
+			{
+			height: 30;
+			width: 220;
+			font-size: 23;
+			padding: 16 5;
+			border-radius: 8px;
+			border: 1px solid grey;
+			}
+		
+		.right
+			{
+			font-size: 21;
+			float: right;
+			}
+		
+		#wrap
+			{
+			width: 460;
+			margin: 0 auto;
+			}
+		
+		.field
+			{
+			clear: both;
+			margin: 4 2;
+			padding: 7;
+			width: 460;
+			}
+		
+		#sucbar
+			{
+			height: 36;
+			font-size: 24;
+			padding: 5 0 3 7;
+			color: green;
+			font-weight: bold;
+			background-color: lightgreen;
+			display: none;
+			}
+		
+		#button
+			{
+			padding: 5 5 30 5;
+			margin: 40 0 0 140;
+			}
+			
+		#error
+			{
+			color: red;
+			}
+		
+		</style>
+		
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	
+	</head>
+	
+	<body>
+		
+		<div id="sucbar">You have been signed up successfully !!</div>
+		
+		<div id="wrap">
+			
+			<h2 align="center">Sign Up Form</h2>
+			
+			<p id="error"></p>
+			
+			<div class="field">
+				<label for="email">E-mail :</label>
+				<input id="email" class="right" type="text" placeholder="abc@xyz.com">
+			</div>
+			<div class="field">
+				<label for="name">Name :</label>
+				<input id="name" class="right" type="text" placeholder="Firstname Lastname">
+			</div>
+			<div class="field">
+				<label for="pass">Password :</label>
+				<input id="pass" class="right" type="password">
+			</div>
+			<div class="field">
+				<label for="cpass">Confirm Password :</label>
+				<input id="cpass" class="right" type="password">
+			</div>
+			<div class="field">
+				<label for="phone">Phone Number :</label>
+				<input id="phone" class="right" type="text">
+			</div>
+			
+			<input id="button" type="submit" value="Sign Up">
+			
+		</div>
+		
+		<script type="text/javascript" src="Mscript.js"></script>
+		
+	</body>
+	
+</html>

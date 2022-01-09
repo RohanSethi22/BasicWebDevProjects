@@ -1,0 +1,414 @@
+		
+			body
+				{
+				margin:0;
+				padding:0;
+				font-family : Helmet, Helvetica, Arial, sans-serif;
+				}
+				
+			body a
+				{
+				text-decoration: none;
+				}
+				
+			h2
+				{
+				margin:0 0 14 0;
+				font-weight: normal;
+				}
+				
+			h3
+				{
+				margin: 10;
+				}
+			
+			h3 a
+				{
+				margin: 10;
+				}
+						
+			#topbar
+				{
+				height:40;
+				margin: 0 auto;
+				padding: 0 0 0 0;
+				width: 1000;
+				background-color:#FFFFFF;
+				}
+				
+			.logo
+				{
+				float:left;
+				margin : 8 8 0 4;
+				height : 24;
+				}
+				
+			.partition
+				{
+				float:left;
+				border-left : 1px #CCCCCC solid;
+				height: 100%;
+				}
+				
+			.img
+				{
+				float:left;
+				height:23;
+				margin : 8 0 0 11;
+				}
+				
+			.signintext
+				{
+				position : relative;
+				left:3;
+				top:12;
+				font-weight : 600;
+				font-size:14;
+				padding: 0 82 0 0;
+				}
+				
+			.toptext
+				{
+				position : relative;
+				top:12;
+				font-weight : 600;
+				font-size:14;
+				color: #333333;
+				padding: 12 11 0 11;
+				}
+				
+			.arrimg
+				{
+				float:left;
+				height:18;
+				margin : 13 4 0 42;
+				}
+				
+			#searchbox
+				{
+				float:left;
+				background-color: #E4E4E4;
+				margin: 8 0 0 10;
+				height: 24;
+				width: 170;
+				border: 0 white none;
+				padding: 0 0 0 6;
+				font-weight: bold;
+				color: black;
+				}
+				
+			.search	
+				{
+				float:left;
+				height:24;
+				margin : 8 0 0 0;
+				}
+				
+			#newscontainer
+				{
+				width 100% ;
+				height: 42;
+				padding: 8 0;
+				background-color : #BB1919 ;
+				}
+				
+			#newsbar	
+				{
+				height: 42;
+				width: 1000 ;
+				padding: 0 0 0 10;
+				margin: 0 auto;
+				font-size:40;
+				color: white;
+				}
+				
+			#subbarcontainer
+				{
+				width 100% ;
+				height: 35;
+				background-color : #A91717 ;
+				}
+				
+			#subbar 
+				{
+				position : relative;
+				left: -8;
+				height: 18;
+				width: 1000 ;
+				margin: 0 auto;
+				padding: 10 0 8 0;
+				}
+				
+			.subpart a
+				{
+				float: left;
+				color: white;
+				font-size: 14px;
+				text-decoration: none;
+				border-right: 1px #BB4545 solid;
+				height: 100%;
+				padding: 0 12;
+				}
+				
+			.subpart a:hover
+				{
+				text-decoration: underline;
+				}
+			
+			.more a
+				{
+				float: left;
+				color: white;
+				font-size: 14px;
+				font-weight: bolder;
+				text-decoration: none;
+				padding: 0 12;
+				}
+				
+			.more img
+				{
+				height: 14;
+				position: relative;
+				top: 2;
+				left: -10;
+				}
+				
+			#bodycontainer
+				{
+				width: 100% ;
+				}
+				
+			#Technobar
+				{
+				height: 40;
+				width: 1000;
+				padding: 6 0;
+				font-size: 20;
+				color: #404040;
+				text-decoration: underline;
+				text-decoration-color: #A91717 ;
+				text-underline-position: under;
+				text-decoration-style: solid;
+				margin: 0 auto;
+				}
+				
+			.technotext
+				{
+				position:relative;
+				top:-17 ;
+				left:5 ;
+				}
+				
+			#NewsVidcontainer
+				{
+				width: 100% ;
+				padding: 0;
+				margin:0;
+				}
+				
+			#NewsVidcontainerStatic
+				{
+				width: 1000 ;
+				margin: 0 auto;
+				padding: 4 0;
+				}
+				
+			#Newspart
+				{
+				float:left;
+				width:666;
+				margin: 0 0 0 0;
+				border-right: solid 1px #CCCCCC ;
+				}
+				
+			.heading
+				{
+				float: left;
+				font-size: 31;
+				font-stretch:
+				margin: 6 0 10 6;
+				font-weight: bold;
+				color: #1167A8 ;
+				padding: 0 0 0 0;
+				}
+				
+			.Newsleft
+				{
+				position: relative;
+				top: -2;
+				left: -2;
+				float: left;
+				width:230;
+				font-size: 14;
+				line-height: 1.3;
+				}
+				
+			.Newstext
+				{
+				color: #404040;
+				}
+				
+			.clear
+				{
+				clear:both;
+				}
+			
+			.news
+				{
+				margin:7 0;
+				padding:0;
+				}
+				
+			.news a
+				{
+				color: black ;
+				}
+					
+			.NewsImg
+				{
+				float: right;
+				margin: 14;
+				}
+			
+			.NewsImg img
+				{
+				height: 224;
+				position: relative;
+				top: -4;
+				left: -4;
+				}
+				
+			.hrsago
+				{
+				float:left;
+				position:relative;
+				top: -3;
+				color: #404040;
+				font-size: 13;
+				padding: 0 6 0 20;
+				}
+				
+			.hrsagox
+				{
+				color: #404040;
+				font-size: 13;
+				margin: 12 0 0 16;
+				}
+			
+			.shh a
+				{
+				float:left;
+				position:relative;
+				top: -13;
+				font-size: 13;
+				padding: 8 0 0 8;
+				border-left: solid 1px #CCCCCC ;
+				height: 12 ;
+				color: #A91717 ;
+				}
+				
+			.shhx a
+				{
+				position:relative;
+				top: 4;
+				font-size: 13;
+				padding: 0 0 0 6;
+				color: #A91717;
+				}
+			
+			#NewsVidcontainerStatic a:hover
+				{
+				color: #1167A8 ;
+				}
+				
+			#othernews
+				{
+				float: left;
+				width:666 ;
+				margin: 0;
+				padding: 0;
+				}
+			
+			.onews
+				{
+				float: left;
+				width: 227;
+				margin: 0;
+				padding: 8 4 0 11;
+				border-right: solid 1px #CCCCCC ;
+				}
+				
+			.onews img
+				{
+				height: 120;
+				margin-bottom: 10;
+				}
+				
+			.onewsexc
+				{
+				float: left;
+				width: 162;
+				margin: 0;
+				padding: 8 4 0 14;
+				}
+							
+			.h a
+				{
+				color: black;
+				margin-top: 16;
+				font-size:20;
+				font-weight: 600;
+				}
+			
+			#Videopart
+				{
+				float:left;
+				margin: 0;
+				padding: 0 13;
+				width:307;
+				}
+				
+			.eachart
+				{
+				margin: 0;
+				padding: 0;
+				height: 88;
+				}
+			
+			.eachart img
+				{
+				margin: 0;
+				padding:0;
+				float: left;
+				width: 114;
+				}
+				
+			.artext
+				{
+				margin: 13 0 13 0;
+				padding:0;
+				font-weight: bold;
+				font-size: 16;
+				}
+				
+			.rightcont
+				{
+				position: relative;
+				top: -10;
+				left: 8;
+				float: right;
+				padding: 0;
+				width: 192;
+				}
+				
+			.up
+				{
+				position: relative;
+				top: -6;
+				left: -2;
+				}
+				
+			.bl
+				{
+				color: black ;
+				}
